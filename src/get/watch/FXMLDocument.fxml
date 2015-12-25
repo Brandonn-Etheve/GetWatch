@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="100.0" prefWidth="177.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="get.watch.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="109.0" fitWidth="182.0" layoutX="-2.0" layoutY="-1.0" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/background.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Rectangle fx:id="screenRectangle1" arcHeight="5.0" arcWidth="5.0" height="35.0" layoutX="19.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="142.0" />
+      <Rectangle fx:id="screenRectangle2" arcHeight="5.0" arcWidth="5.0" fill="#830101" height="35.0" layoutX="19.0" layoutY="57.0" opacity="0.2" stroke="BLACK" strokeType="INSIDE" width="142.0" />
+      <Label fx:id="displayLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="57.0" onMouseClicked="#displayLabel_Clicked" prefHeight="35.0" prefWidth="142.0" text="18:56:25" textFill="RED">
+         <font>
+            <Font name="LCD5x8H" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fx:id="dateImgView" fitHeight="12.0" fitWidth="20.0" layoutX="24.0" layoutY="30.0" onMouseClicked="#dateImgView_Clicked" onMouseEntered="#dateImgView_Entered" onMouseExited="#dateImgView_Exited" onMousePressed="#dateImgView_Pressed" onMouseReleased="#dateImgView_Released" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/unfocused.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="dateSpImgView" fitHeight="12.0" fitWidth="20.0" layoutX="139.0" layoutY="30.0" onMouseClicked="#dateSpImgView_Clicked" onMouseEntered="#dateSpImgView_Entered" onMouseExited="#dateSpImgView_Exited" onMousePressed="#dateSpImgView_Pressed" onMouseReleased="#dateSpImgView_Released" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/unfocused.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="17.0" layoutX="42.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="96.0" />
+      <Rectangle fx:id="titleRectangle" arcHeight="5.0" arcWidth="5.0" fill="#830101" height="18.0" layoutX="42.0" layoutY="1.0" opacity="0.2" stroke="BLACK" strokeType="INSIDE" width="96.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Rectangle>
+      <Label fx:id="titreLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="2.0" prefHeight="14.0" prefWidth="96.0" text="Get Watch" textFill="RED">
+         <font>
+            <Font name="LCD5x8H" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="12.0" layoutX="167.0" onMouseClicked="#close_Clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/close.gif" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="2.0" layoutY="91.0" prefHeight="13.0" prefWidth="178.0" text="Auteur: ethevebrandonn@cmail.nu version: 1">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#000000e8" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="8.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="colorPicker" layoutX="69.0" layoutY="23.0" onAction="#colorChoosen" prefHeight="26.0" prefWidth="48.0" />
+   </children>
+</AnchorPane>
