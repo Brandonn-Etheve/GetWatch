@@ -14,6 +14,11 @@ By default, GetWatch start on the right of your screen like a Windows 7 gadget a
 
 The displays screen color can be changed by clicking on the displays screen
 
+## Download
+
+Lastest executable can be downloaded [here.](https://github.com/Brandonn-Etheve/GetWatch/raw/master/dist/Get%20Watch.jar)
+Java need to be installed on your system.
+
 ### Know Bugs
 
 Sometimes the display get stuck on the next french public holiday display and never return to times
